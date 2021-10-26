@@ -15,11 +15,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          ALoo
+          Learn React ok
         </a>
       </header>
     </div>
   );
 }
 
-export default App;
+export default App;;
