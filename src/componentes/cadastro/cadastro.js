@@ -4,11 +4,12 @@ import './cadastro.css';
 const Cadastro = () =>{
     return (
         <div className="cadastro">
-            <h1>Cadastro</h1>
-
+            <div className="texto">
+                <h1>Cadastro</h1>
+            </div>
 
             <div className="cadastro-email">
-                <input type="text" placeholder="Digite um email">
+                <input className= "cadastro-email-campo" type="text" placeholder="Digite um email">
                 </input>
             </div>
 
