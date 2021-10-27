@@ -1,8 +1,10 @@
+import React from 'react';
 import './App.css';
+import Cadastro from './componentes/cadastro';
 
 function App() {
   return (
-    <h1>Hello World!</h1>
+    <Cadastro/>
   );
 }
 
