@@ -9,13 +9,11 @@ const Cadastro = () =>{
             </div>
 
             <div className="cadastro-email">
-                <input className= "cadastro-email-campo" type="text" placeholder="Digite um email">
-                </input>
+                <input className= "cadastro-email-campo" type="text" placeholder="Digite um email"/>
             </div>
 
             <div className="cadastro-password">
-                <input type="text" placeholder="Digite uma senha">
-                </input>
+                <input type="text" placeholder="Digite uma senha"/>
             </div>
 
             <button type="submit">

@@ -1,23 +1,20 @@
 .cadastro{
     display: flex;
-    background-color: #121212;
-    color: white;
+    width: 100vw;
+    height: 100vw;
 }
 
 .texto {
     position: absolute;
-    width: 336px;
-    height: 108px;
-    left: 552px;
-    top: 231px;
+    justify-content: center;
+    width: 20%;
+    height: 20%;
+    left: 30%;
+    top: 20%;
 
     font-family: Poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 72px;
-    line-height: 108px;
-
-    color: #1D3557;
+    font-size: 40px;
+    color: #1D3557
 }
 
 .cadastro-email{
@@ -26,6 +23,7 @@
     height: 75px;
     left: 208px;
     top: 415px;
+
 
     background: #F1FAEE;
     border-radius: 10px;
