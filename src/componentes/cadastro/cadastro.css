@@ -1,38 +1,54 @@
 .cadastro{
-    display: flex;
-    width: 100vw;
-    height: 100vw;
+
 }
 
 .texto {
-    position: absolute;
     justify-content: center;
-    width: 20%;
-    height: 20%;
-    left: 30%;
-    top: 20%;
+    width: 336px;
+    height: 108px;
 
     font-family: Poppins;
     font-size: 40px;
     color: #1D3557
 }
 
-.cadastro-email{
-    position: absolute;
+.nome{
     width: 500px;
     height: 75px;
-    left: 208px;
-    top: 415px;
-
-
     background: #F1FAEE;
     border-radius: 10px;
+    border: none;
 }
 
-.cadastro-email-campo{
-    width: 100%;
+.email{
+    width: 500px;
     height: 75px;
     background: #F1FAEE;
     border-radius: 10px;
+    border: none;
+}
 
+.password{
+    width: 500px;
+    height: 75px;
+    background: #F1FAEE;
+    border-radius: 10px;
+    border: none;
+}
+
+.repassword{
+    width: 500px;
+    height: 75px;
+    background: #F1FAEE;
+    border-radius: 10px;
+    border: none;
+}
+
+.button{
+    width: 350px;
+    height: 70px;
+    background: #457B9D;
+    border-radius: 10px;
+    border: none;
+    color: #F1FAEE;
 }

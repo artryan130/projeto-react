@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Cadastro from './componentes/cadastro/cadastro.js';
+import Cadastro from './componentes/cadastro/cadastro.jsx';
 
 function App() {
   return (
