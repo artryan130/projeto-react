@@ -1,52 +1,70 @@
-.cadastro{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
+.cadastro{
+    font-family: 'Poppins', sans-serif;
 }
 
 .texto {
+    position: fixed;
     justify-content: center;
     width: 336px;
     height: 108px;
-
-    font-family: Poppins;
+    margin-top: 100px;
+    margin-left: 552px;
     font-size: 40px;
     color: #1D3557
 }
 
 .nome{
+    position: fixed;
     width: 500px;
     height: 75px;
+    margin-top: 315px;
+    margin-left: 208px;
     background: #F1FAEE;
     border-radius: 10px;
     border: none;
 }
 
 .email{
+    position: fixed;
     width: 500px;
     height: 75px;
+    margin-top: 315px;
+    margin-left: 733px;
     background: #F1FAEE;
     border-radius: 10px;
     border: none;
 }
 
 .password{
+    position: fixed;
     width: 500px;
     height: 75px;
+    margin-top: 433px;
+    margin-left: 208px;
     background: #F1FAEE;
     border-radius: 10px;
     border: none;
 }
 
 .repassword{
+    position: fixed;
     width: 500px;
     height: 75px;
+    margin-top: 433px;
+    margin-left: 733px;
     background: #F1FAEE;
     border-radius: 10px;
     border: none;
 }
 
 .button{
+    position: fixed;
     width: 350px;
     height: 70px;
+    margin-top: 571px;
+    margin-left: 538px;
     background: #457B9D;
     border-radius: 10px;
     border: none;
