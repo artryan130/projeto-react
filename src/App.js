@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import Cadastro from './componentes/cadastro/cadastro.jsx';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './routes/index';
 
-function App() {
-  return (
-    <Cadastro/>
+const App = () => (
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   );
-}
 
 export default App;;
