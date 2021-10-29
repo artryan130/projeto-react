@@ -17,7 +17,7 @@
     width: 500px;
     height: 75px;
     border-radius: 10px;
-    background-color: #F1FAEE; 
+    background-color: #F1FAEE;
 }   
 
 
@@ -38,5 +38,13 @@
     cursor: pointer;
     color: #F1FAEE;
     margin-bottom: 40px;
+    transition: 0.3s;
 }
+
+button:hover {
+    background-color: #1D3557 ;
+    color:white;
+}
+
+
 
