@@ -22,18 +22,18 @@ const Cadastro = () =>{
         setPassword(event.target.value);
     }
 
-    function handleSubmit(event) {
-        console.log("Enviar formulario");
-        event.preventDefault();
-        axios
-            .post("/users", { name, email, password })
-            .then((res) => history.push("/Login"))
-            .catch((err) => console.log(err));
-    }
+    // function handleSubmit(event) {
+    //     console.log("Enviar formulario");
+    //     event.preventDefault();
+    //     axios
+    //         .post("/users", { name, email, password })
+    //         .then((res) => history.push("/Login"))
+    //         .catch((err) => console.log(err));
+    // }
 
     return (
         <div className="cadastro">
-            <form method="POST" onSubmit={handleSubmit}>
+            {/* <form method="POST" onSubmit={handleSubmit}> */}
 
                 <div className="texto">
                     <h1>Cadastro</h1>
@@ -56,7 +56,7 @@ const Cadastro = () =>{
                 </div>
 
                 <button type="submit" className="button">Confirmar</button>
-            </form>
+            {/* </form> */}
         </div>
     )
 }
