@@ -16,9 +16,15 @@ const Login = () =>{
             <div>
                 <input className="login-password" type="text" placeholder="Password"/>
             </div>
-        
-            <button type="submit" className="login-button">Entrar</button>
 
+            <div>
+                <button type="submit" className="login-button">Entrar</button>
+            </div>
+            
+
+            <div className="texto-cadastro">
+                <h1>Não tem uma conta ainda? <a href="/register">Cadastre-se</a></h1>
+            </div>
 
 
         </div>

@@ -27,7 +27,7 @@ const Cadastro = () =>{
     //     event.preventDefault();
     //     axios
     //         .post("/users", { name, email, password })
-    //         .then((res) => history.push("/Login"))
+    //         .then((res) => history.push("/"))
     //         .catch((err) => console.log(err));
     // }
 
@@ -39,19 +39,14 @@ const Cadastro = () =>{
                     <h1>Cadastro</h1>
                 </div>
 
-                <div className="">
+                <div className="linha1">
                     <input className= "nome" type="text" placeholder="Nome" onChange={handleNameChange}/>
-                </div>
-
-                <div className="">
                     <input className= "email" type="email" placeholder="Email" onChange={handleEmailChange}/>
                 </div>
 
-                <div className="">
-                    <input className="password" type="password" placeholder="Senha" onChange={handlePasswordChange}/>
-                </div>
 
-                <div className="">
+                <div className="linha2">
+                    <input className="password" type="password" placeholder="Senha" onChange={handlePasswordChange}/>
                     <input className="repassword" type="password" placeholder="Repetir Senha" onChange={handlePasswordChange}/>
                 </div>
 

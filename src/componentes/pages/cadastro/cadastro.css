@@ -2,72 +2,82 @@
 
 .cadastro{
     font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .texto {
-    position: fixed;
-    justify-content: center;
+    /* position: fixed; */
+    text-align: center;
     width: 336px;
     height: 108px;
-    margin-top: 100px;
-    margin-left: 552px;
     font-size: 40px;
-    color: #1D3557
+    color: #1D3557;
+    margin-bottom: 100px;
+}
+
+.linha1{
+    display: flex;
 }
 
 .nome{
-    position: fixed;
+    /* position: fixed; */
     width: 500px;
     height: 75px;
-    margin-top: 315px;
-    margin-left: 208px;
     background: #F1FAEE;
     border-radius: 10px;
     border: none;
+    margin-right: 40px;
 }
 
 .email{
-    position: fixed;
+    /* position: fixed; */
     width: 500px;
     height: 75px;
-    margin-top: 315px;
-    margin-left: 733px;
     background: #F1FAEE;
     border-radius: 10px;
     border: none;
+}
+
+.linha2{
+    display: flex;
 }
 
 .password{
-    position: fixed;
+    /* position: fixed; */
     width: 500px;
     height: 75px;
-    margin-top: 433px;
-    margin-left: 208px;
     background: #F1FAEE;
     border-radius: 10px;
     border: none;
+    margin-right: 40px;
+    margin-top: 40px;
 }
 
 .repassword{
-    position: fixed;
+    /* position: fixed; */
     width: 500px;
     height: 75px;
-    margin-top: 433px;
-    margin-left: 733px;
     background: #F1FAEE;
     border-radius: 10px;
     border: none;
+    margin-top: 40px;
 }
 
 .button{
-    position: fixed;
+    /* position: fixed; */
     width: 350px;
     height: 70px;
-    margin-top: 571px;
-    margin-left: 538px;
     background: #457B9D;
     border-radius: 10px;
     border: none;
     color: #F1FAEE;
     cursor: pointer;
+    margin-top: 40px;
 }

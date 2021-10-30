@@ -1,14 +1,14 @@
-.body{
-    text-align: center;
-    width: 100%;
-    height: 100%;
+ .body{
+    width: 100vw;
+    height: 100vh;
     position: relative;
-    top: 20%; /* posiciona na metade da tela */
-    margin-top: 0px;
-}
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+ }
 
 .login-texto{
-    font-size: 72px;
+    font-size: 60px;
     color: #1D3557;
 }
 
@@ -25,9 +25,9 @@
     width: 500px;
     height: 75px;
     border-radius: 10px;
+    background-color: #F1FAEE;
     margin-top: 40px;
     margin-bottom: 40px;
-    background-color: #F1FAEE
 }
 
 .login-button{
@@ -41,9 +41,21 @@
     transition: 0.3s;
 }
 
+.texto-cadastro{
+    font-size: 16px;
+}
+
 button:hover {
     background-color: #1D3557 ;
     color:white;
+}
+
+input::placeholder {
+    font-size: 24px;
+}
+
+a:link {
+    color: #1D3557;
 }
 
 
