@@ -24,7 +24,7 @@ const Login = () =>{
             </div>
             
             <div className="l-register">
-                <h1>Não tem uma conta ainda? <a href="/register">Cadastre-se</a></h1>
+                <h2>Não tem uma conta ainda? <a href="/register">Cadastre-se</a></h2>
             </div>
 
         </div>
