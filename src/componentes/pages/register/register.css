@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-
-.cadastro{
-    font-family: 'Poppins', sans-serif;
+.register {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -12,9 +9,7 @@
     text-align: center;
 }
 
-.texto {
-    /* position: fixed; */
-    text-align: center;
+.r-title {
     width: 336px;
     height: 108px;
     font-size: 40px;
@@ -22,62 +17,87 @@
     margin-bottom: 100px;
 }
 
-.linha1{
+.r-line1 {
     display: flex;
 }
 
-.nome{
-    /* position: fixed; */
+.r-name {
     width: 500px;
     height: 75px;
-    background: #F1FAEE;
     border-radius: 10px;
     border: none;
     margin-right: 40px;
+    background: #F1FAEE;
 }
 
-.email{
-    /* position: fixed; */
+.r-name::placeholder {
+    padding: 20px;
+    font-size: 24px;
+}
+
+.r-email {
     width: 500px;
     height: 75px;
-    background: #F1FAEE;
     border-radius: 10px;
     border: none;
+    background: #F1FAEE;
 }
 
-.linha2{
+.r-email::placeholder {
+    padding: 20px;
+    font-size: 24px;
+}
+
+.r-line2 {
     display: flex;
+    margin-top: 40px;
+    
 }
 
-.password{
-    /* position: fixed; */
+.r-password {
     width: 500px;
     height: 75px;
-    background: #F1FAEE;
     border-radius: 10px;
     border: none;
     margin-right: 40px;
-    margin-top: 40px;
+    background: #F1FAEE;
 }
 
-.repassword{
-    /* position: fixed; */
+.r-password::placeholder {
+    padding: 20px;
+    font-size: 24px;
+}
+
+.r-repassword {
     width: 500px;
     height: 75px;
-    background: #F1FAEE;
     border-radius: 10px;
     border: none;
-    margin-top: 40px;
+    background: #F1FAEE;
 }
 
-.button{
-    /* position: fixed; */
+.r-repassword::placeholder {
+    padding: 20px;
+    font-size: 24px;
+}
+
+.r-button {
     width: 350px;
     height: 70px;
-    background: #457B9D;
     border-radius: 10px;
     border: none;
-    color: #F1FAEE;
     cursor: pointer;
     margin-top: 40px;
+    background: #457B9D;
+    color: #F1FAEE;
+    font-size: 36px;
+}
+
+.r-button:hover {
+    background-color: #1D3557 ;
+    color:white;
+}
+
+.r-button input::placeholder {
+    font-size: 24px;
 }

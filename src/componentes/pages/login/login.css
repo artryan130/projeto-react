@@ -1,62 +1,81 @@
- .body{
+.login {
     width: 100vw;
     height: 100vh;
     position: relative;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     text-align: center;
  }
 
-.login-texto{
-    font-size: 60px;
+.l-text {
+    text-align: center;
+    font-size: 40px;
     color: #1D3557;
+    margin-bottom: 100px;
 }
 
-
-.login-email{
+.l-email {
     width: 500px;
     height: 75px;
     border-radius: 10px;
+    border: none;
     background-color: #F1FAEE;
-}   
+}
 
+.l-email::placeholder {
+    padding: 20px;
+    font-size: 24px;
+}
 
-.login-password{
+.l-password {
     width: 500px;
     height: 75px;
     border-radius: 10px;
-    background-color: #F1FAEE;
+    border: none;
     margin-top: 40px;
     margin-bottom: 40px;
+    background-color: #F1FAEE;
 }
 
-.login-button{
+.l-password::placeholder {
+    padding: 20px;
+    font-size: 24px;
+}
+
+.l-button {
     width: 350px;
     height: 70px;
-    background: #457B9D;
     border-radius: 10px;
+    border: none;
     cursor: pointer;
-    color: #F1FAEE;
     margin-bottom: 40px;
+    background: #457B9D;
+    color: #F1FAEE;
+    font-size: 36px;
     transition: 0.3s;
 }
 
-.texto-cadastro{
-    font-size: 16px;
-}
-
-button:hover {
+.l-button:hover {
     background-color: #1D3557 ;
     color:white;
 }
 
-input::placeholder {
+.l-button input::placeholder {
     font-size: 24px;
 }
 
-a:link {
+.l-register {
+    font-size: 16px;
     color: #1D3557;
 }
 
+.l-register a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1D3557;
+}
 
-
+.l-register a:link {
+    color: #1D3557;
+}

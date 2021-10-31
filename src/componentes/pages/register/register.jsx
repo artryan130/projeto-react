@@ -1,11 +1,10 @@
 import React from "react";
 import axios from "axios";
 import { useState } from "react";
-import './cadastro.css';
+import './register.css';
 
 
-
-const Cadastro = () =>{
+const Register = () =>{
     const [name, setName] = useState();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
@@ -32,28 +31,28 @@ const Cadastro = () =>{
     // }
 
     return (
-        <div className="cadastro">
+        <div className="register">
             {/* <form method="POST" onSubmit={handleSubmit}> */}
 
-                <div className="texto">
+                <div className="r-title">
                     <h1>Cadastro</h1>
                 </div>
 
-                <div className="linha1">
-                    <input className= "nome" type="text" placeholder="Nome" onChange={handleNameChange}/>
-                    <input className= "email" type="email" placeholder="Email" onChange={handleEmailChange}/>
+                <div className="r-line1">
+                    <input className= "r-name" type="text" placeholder="Nome" onChange={handleNameChange}/>
+                    <input className= "r-email" type="email" placeholder="Email" onChange={handleEmailChange}/>
                 </div>
 
-
-                <div className="linha2">
-                    <input className="password" type="password" placeholder="Senha" onChange={handlePasswordChange}/>
-                    <input className="repassword" type="password" placeholder="Repetir Senha" onChange={handlePasswordChange}/>
+                <div className="r-line2">
+                    <input className="r-password" type="password" placeholder="Senha" onChange={handlePasswordChange}/>
+                    <input className="r-repassword" type="password" placeholder="Repetir Senha" onChange={handlePasswordChange}/>
                 </div>
 
-                <button type="submit" className="button">Confirmar</button>
+                <button type="submit" className="r-button">Confirmar</button>
+                
             {/* </form> */}
         </div>
     )
 }
 
-export default Cadastro;
+export default Register;

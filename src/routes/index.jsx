@@ -1,13 +1,13 @@
 import React from "react";
 import { Switch, Route } from "react-router";
 
-import Cadastro from "../componentes/pages/cadastro/cadastro";
+import Register from "../componentes/pages/register/register";
 import Login from "../componentes/pages/login/login";
 
 const Routes = () => (
     <Switch>
         <Route path="/" exact component={Login}/>
-        <Route path="/register" component={Cadastro}/>
+        <Route path="/register" component={Register}/>
     </Switch>
 )
 
