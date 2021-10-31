@@ -9,6 +9,10 @@
     text-align: center;
 }
 
+.r-arrow {
+    justify-content: start;
+}
+
 .r-title {
     width: 336px;
     height: 108px;
