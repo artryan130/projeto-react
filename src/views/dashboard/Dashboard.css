@@ -1,28 +1,9 @@
-.i-line1 {
-    font-size: 40px;
-    width: 336px;
-    height: 108px;
-    color: #1D3557;
-    margin-bottom: 100px;
+.dashboard{
+    width: 100%;
     display: flex;
-    margin-left: 30px;
 }
 
-.i-pesquisar {
-    width: 275px;
-    height: 50px;
-    margin-left: 100vh;
-    margin-top: 83px;
-    border-radius: 10px 0px 0px 10px;
-    border: none;
-    background: #F1FAEE;
-}
-
-.i-enviar{
-    width: 275px;
-    height: 50px;
-    margin-top: 83px;
-    border: none;
-    border-radius: 0px 10px 10px 0px;
-    background:#457B9D;
+.PageContent{
+    width: 90%;
+    height: 100%;
 }
