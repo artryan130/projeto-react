@@ -1,5 +1,5 @@
-import React from "react";
 import { Router, Switch, Route } from "react-router-dom";
+import history from '../../services/history';
 
 import Sidebar from "./sidebar/Sidebar";
 import Imoveis from "./imoveis/Imoveis";
@@ -13,7 +13,7 @@ import "./Dashboard.css";
 function Dashboard() {
   return (
     <div className="dashboard">
-      <Router>
+      <Router history={history}>
         <Sidebar />
         <div className="PageContent">
           <Switch>

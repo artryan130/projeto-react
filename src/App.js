@@ -1,4 +1,5 @@
 import { Router, Switch, Route } from "react-router-dom";
+import history from "./services/history";
 
 import Login from "./views/login/Login";
 import Register from "./views/register/Register";
@@ -9,7 +10,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router history={history}>
         <Switch>
           <Route exact path="/" component={Login} />
           <Route path="/register" component={Register} />
