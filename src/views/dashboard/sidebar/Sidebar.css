@@ -1,12 +1,9 @@
-.navbar {
-    height: 1024px;
-    width: 96px;
+.Navbar {
     display: flex;
     flex-direction: column;
-    margin-top: 15%;
-    background: #F1FAEE;
-}
 
-.NavItemLogo1 {
-    color: #F1FAEE;
+    margin: 0;
+    padding: 10px;
+
+    background: #F1FAEE;
 }

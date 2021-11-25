@@ -12,12 +12,14 @@ import "./Dashboard.css";
 
 function Dashboard() {
   return (
-    <div className="dashboard">
+    <div className="Dashboard">
       <Router history={history}>
+        <div className="Sidebar">
         <Sidebar />
+        </div>
         <div className="PageContent">
           <Switch>
-            <Route path="/dashboard/imoveis" component={Imoveis} />
+            <Route path="/dashboard/" component={Imoveis} />
             <Route path="/dashboard/imovel" component={Imovel} />
             <Route path="/dashboard/editimovel" component={EditImovel} />
             <Route path="/dashboard/newimovel" component={NewImovel} />

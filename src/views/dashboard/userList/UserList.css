@@ -1,0 +1,9 @@
+.User {
+    display: flex;
+    flex-direction: column;
+}
+
+.User .title {
+    display: flex;
+    flex-direction: row;
+}

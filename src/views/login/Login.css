@@ -1,82 +1,75 @@
-.login {
+.Login {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
- }
+}
 
-.l-text {
-    text-align: center;
+.Login .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Login .form .text {
     font-size: 40px;
     color: #1D3557;
-    margin-bottom: 100px;
 }
 
-.l-email {
+.Login .form .email {
     width: 500px;
     height: 75px;
+    margin-top: 20px;
+
     border-radius: 10px;
     border: none;
+
     background-color: #F1FAEE;
 }
 
-.l-email::placeholder {
-    padding: 20px;
-    font-size: 24px;
-}
-
-.l-password {
+.Login .form .password {
     width: 500px;
     height: 75px;
-    border-radius: 10px;
-    border: none;
     margin-top: 40px;
-    margin-bottom: 40px;
+
+    border-radius: 10px;
+    border: none;
+
     background-color: #F1FAEE;
 }
 
-.l-password::placeholder {
+.Login .form ::placeholder {
     padding: 20px;
     font-size: 24px;
 }
 
-.l-button {
+.Login .form .button {
     width: 350px;
     height: 70px;
+    margin-top: 40px;
+    
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    margin-bottom: 40px;
+    
     background: #457B9D;
+    
     color: #F1FAEE;
     font-size: 36px;
     transition: 0.3s;
 }
 
-.l-button:hover {
-    background-color: #1D3557 ;
-    color:white;
+.Login .form .button:hover {
+    background-color: #1D3557;
+    color: white;
 }
 
-.l-button input::placeholder {
-    font-size: 24px;
-}
+.Login .form .register {
+    margin-top: 40px;
 
-.l-register {
     font-size: 16px;
     color: #1D3557;
 }
 
-.l-register a {
+.Login .form .register a {
     text-decoration: none;
-    font-weight: 800;
-    color: #1D3557;
-}
-
-.l-register a:link {
     color: #1D3557;
 }

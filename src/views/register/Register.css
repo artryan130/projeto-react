@@ -1,107 +1,108 @@
-.register {
+.Register {
     width: 100vw;
     height: 100vh;
     display: flex;
-    position: relative;
     flex-direction: column;
-    justify-content: center;
+}
+
+.Register .arrow {
+    margin-top: 1px;
+}
+
+.Register .form {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
-.r-arrow {
-    justify-content: start;
-}
-
-.r-title {
+.Register .form .title {
     width: 336px;
     height: 108px;
+
     font-size: 40px;
+
     color: #1D3557;
-    margin-bottom: 100px;
 }
 
-.r-line1 {
+.Register .form .line1 {
     display: flex;
+    flex-direction: row;
+    margin-top: 132px;
 }
 
-.r-name {
+.Register .form .name {
     width: 500px;
     height: 75px;
-    border-radius: 10px;
-    border: none;
     margin-right: 40px;
-    background: #F1FAEE;
-}
 
-.r-name::placeholder {
-    padding: 20px;
-    font-size: 24px;
-}
-
-.r-email {
-    width: 500px;
-    height: 75px;
     border-radius: 10px;
     border: none;
+
     background: #F1FAEE;
 }
 
-.r-email::placeholder {
-    padding: 20px;
-    font-size: 24px;
+.Register .form .email {
+    width: 500px;
+    height: 75px;
+
+    border-radius: 10px;
+    border: none;
+
+    background: #F1FAEE;
 }
 
-.r-line2 {
+.Register .form .line2 {
     display: flex;
-    margin-top: 40px;
-    
+    flex-direction: row;
+    margin-top: 59px;
 }
 
-.r-password {
+.Register .form .password {
     width: 500px;
     height: 75px;
-    border-radius: 10px;
-    border: none;
     margin-right: 40px;
-    background: #F1FAEE;
-}
 
-.r-password::placeholder {
-    padding: 20px;
-    font-size: 24px;
-}
-
-.r-repassword {
-    width: 500px;
-    height: 75px;
     border-radius: 10px;
     border: none;
+
     background: #F1FAEE;
 }
 
-.r-repassword::placeholder {
+.Register .form .repassword {
+    width: 500px;
+    height: 75px;
+
+    border-radius: 10px;
+    border: none;
+
+    background: #F1FAEE;
+}
+
+.Register .form ::placeholder {
     padding: 20px;
     font-size: 24px;
 }
 
-.r-button {
+.Register .form .button {
     width: 350px;
     height: 70px;
+    margin-top: 69px;
+
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    margin-top: 40px;
+
     background: #457B9D;
+
     color: #F1FAEE;
     font-size: 36px;
 }
 
-.r-button:hover {
-    background-color: #1D3557 ;
-    color:white;
+.Register .form .button:hover {
+    background-color: #1D3557;
+    color: white;
 }
 
-.r-button input::placeholder {
+.Register .form .button input::placeholder {
     font-size: 24px;
 }

@@ -4,7 +4,7 @@ import { useHistory } from "react-router";
 
 import "./Login.css";
 
-const Login = () => {
+export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -31,24 +31,24 @@ const Login = () => {
   }
 
   return (
-    <div className="login">
-      <form method="POST" onSubmit={handleSubmit}>
-        <div className="l-text">
+    <div className="Login">
+      <form method="POST" onSubmit={handleSubmit} className="form">
+        <div className="text">
           <h1>Login</h1>
         </div>
 
-        <div className="l-line1">
+        <div className="line1">
           <input
-            className="l-email"
+            className="email"
             type="email"
             onChange={handleEmailChange}
             placeholder="Email"
           />
         </div>
 
-        <div className="l-line2">
+        <div className="line2">
           <input
-            className="l-password"
+            className="password"
             type="password"
             onChange={handlePasswordChange}
             placeholder="Password"
@@ -56,12 +56,12 @@ const Login = () => {
         </div>
 
         <div>
-          <button type="submit" className="l-button">
+          <button type="submit" className="button">
             Entrar
           </button>
         </div>
 
-        <div className="l-register">
+        <div className="register">
           <h2>
             Não tem uma conta ainda? <a href="/register">Cadastre-se</a>
           </h2>
@@ -70,5 +70,3 @@ const Login = () => {
     </div>
   );
 };
-
-export default Login;

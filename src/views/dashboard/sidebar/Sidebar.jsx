@@ -9,35 +9,31 @@ import "./Sidebar.css";
 
 export default function Sidebar() {
   return (
-    <nav class="navbar">
+    <nav class="Navbar">
       <NavLink
-        to="/dashboard/imoveis"
+        to="/dashboard"
         exact
         activeClassName="selected"
         className="NavbarItem"
       >
-        <img src={Home} alt="Imoveis" className="NavItemLogo1" />
+        <img src={Home} alt="Imoveis" className="NavItemHome" />
       </NavLink>
       <NavLink
         to="/dashboard/newimoveis"
         activeClassName="selected"
         className="NavbarItem"
       >
-        <img src={Add} alt="NewImoveis" className="NavItemLogo" />
+        <img src={Add} alt="NewImoveis" className="NavItemAdd" />
       </NavLink>
       <NavLink
         to="/dashboard/userlist"
         activeClassName="selected"
         className="NavbarItem"
       >
-        <img src={User} alt="Listar Usuários" className="NavItemLogo" />
+        <img src={User} alt="Listar Usuários" className="NavItemUser" />
       </NavLink>
-      <NavLink
-        to="/"
-        activeClassName="selected"
-        className="NavbarItem"
-      >
-        <img src={Logout} alt="Sair" className="NavItemLogo" />
+      <NavLink to="/" activeClassName="selected" className="NavbarItem">
+        <img src={Logout} alt="Sair" className="NavItemLogout" />
       </NavLink>
     </nav>
   );

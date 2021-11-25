@@ -4,7 +4,7 @@ import { useHistory } from "react-router";
 
 import "./Register.css";
 
-const Register = () => {
+export default function Register() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -37,63 +37,60 @@ const Register = () => {
   }
 
   return (
-    <div className="register">
-      <form method="POST" onSubmit={handleSubmit}>
-        <div className="r-arrow">
-          <a href="/">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="64px"
-              viewBox="0 0 24 24"
-              width="64px"
-              fill="#1D3557"
-            >
-              <path d="M0 0h24v24H0V0z" fill="none" />
-              <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
-            </svg>
-          </a>
-        </div>
-
-        <div className="r-title">
+    <div className="Register">
+      <div className="arrow">
+        <a href="/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="64px"
+            viewBox="0 0 24 24"
+            width="64px"
+            fill="#1D3557"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+          </svg>
+        </a>
+      </div>
+      <form method="POST" onSubmit={handleSubmit} className="form">
+        <div className="title">
           <h1>Cadastro</h1>
         </div>
 
-        <div className="r-line1">
+        <div className="line1">
           <input
-            className="r-name"
+            className="name"
             type="text"
             placeholder="Nome"
             onChange={handleNameChange}
           />
           <input
-            className="r-email"
+            className="email"
             type="email"
             placeholder="Email"
             onChange={handleEmailChange}
           />
         </div>
 
-        <div className="r-line2">
+        <div className="line2">
           <input
-            className="r-password"
+            className="password"
             type="password"
             placeholder="Senha"
             onChange={handlePasswordChange}
           />
           <input
-            className="r-repassword"
+            className="repassword"
             type="password"
             placeholder="Repetir Senha"
             onChange={handlePasswordChange}
           />
         </div>
 
-        <button type="submit" className="r-button">
+        <button type="submit" className="button">
           Confirmar
         </button>
       </form>
     </div>
   );
 };
-
-export default Register;
