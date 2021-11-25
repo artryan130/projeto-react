@@ -1,0 +1,30 @@
+.Imoveis {
+    width: 90%;
+    height: 100%;
+}
+
+.Imoveis .Title {
+    display: flex;
+    flex-direction: row;
+}
+
+.Imoveis .Title .Pesquisar {
+    align-items: baseline;
+}
+
+.Imoveis .Content {
+    display: flex;
+    width: 1150px;
+    height: 847px;
+    border-radius: 10px;
+    background-color: #F1FAEE;
+}
+
+.Imoveis .Title .Pesquisar {
+    width: 275px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: #F1FAEE;
+    font-size: 16px;
+}
