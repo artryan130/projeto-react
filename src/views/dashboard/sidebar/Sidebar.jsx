@@ -19,7 +19,7 @@ export default function Sidebar() {
         <img src={Home} alt="Imoveis" className="NavItemHome" />
       </NavLink>
       <NavLink
-        to="/dashboard/newimoveis"
+        to="/dashboard/newimovel"
         activeClassName="selected"
         className="NavbarItem"
       >

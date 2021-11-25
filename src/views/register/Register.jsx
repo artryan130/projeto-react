@@ -5,9 +5,6 @@ import { useHistory } from "react-router";
 import "./Register.css";
 
 export default function Register() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
 
   const history = useHistory();
 
@@ -22,6 +19,10 @@ export default function Register() {
   function handlePasswordChange(event) {
     setPassword(event.target.value);
   }
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   function handleSubmit(event) {
     console.log("Enviar formulario");

@@ -2,3 +2,24 @@
     display: flex;
     flex-direction: column;
 }
+
+.New .title h1 {
+    color: #1D3557;
+}
+
+.New .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.New .form input {
+    width: 275px;
+    height: 50px;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    border: none;
+
+    color: #F1FAEE;
+    font-size: 16px;
+}
