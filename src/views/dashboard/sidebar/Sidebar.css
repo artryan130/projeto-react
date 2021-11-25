@@ -1,4 +1,12 @@
 .navbar {
-    display: block;
-    background-color: #F1FAEE;
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    background: #F1FAEE;
+}
+
+.NavItemLogo1 {
+    color: #F1FAEE;
 }
