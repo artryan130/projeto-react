@@ -5,6 +5,10 @@ import { useHistory } from "react-router";
 import "./Register.css";
 
 export default function Register() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [passwordConfirmation, setPasswordConfirmation] = useState("");
 
   const history = useHistory();
 
@@ -20,18 +24,19 @@ export default function Register() {
     setPassword(event.target.value);
   }
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  function handlePasswordConfirmationChange(event) {
+    setPasswordConfirmation(event.target.value);
+  }
 
   function handleSubmit(event) {
     console.log("Enviar formulario");
     event.preventDefault();
     axios
       .post("https://webapp290016.ip-198-58-124-158.cloudezapp.io/users", {
-        name,
-        email,
-        password,
+        name: name,
+        email: email,
+        password: password,
+        passwordConfirmation: passwordConfirmation,
       })
       .then((res) => history.push("/"))
       .catch((err) => console.log(err));
@@ -84,7 +89,7 @@ export default function Register() {
             className="repassword"
             type="password"
             placeholder="Repetir Senha"
-            onChange={handlePasswordChange}
+            onChange={handlePasswordConfirmationChange}
           />
         </div>
 
@@ -94,4 +99,4 @@ export default function Register() {
       </form>
     </div>
   );
-};
+}

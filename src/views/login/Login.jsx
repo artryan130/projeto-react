@@ -24,9 +24,9 @@ export default function Login() {
     axios
       .post(
         "https://webapp290016.ip-198-58-124-158.cloudezapp.io/users/login",
-        { email, password }
+        { email: email, password: password }
       )
-      .then((res) => history.push("/"))
+      .then((res) => history.push("/dashboard"))
       .catch((err) => console.log(err));
   }
 
@@ -69,4 +69,4 @@ export default function Login() {
       </form>
     </div>
   );
-};
+}
