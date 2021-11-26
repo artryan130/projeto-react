@@ -5,11 +5,21 @@
 
 .New .title h1 {
     color: #1D3557;
+    font-size: 60px;
+    margin-top: 0px;
+}
+
+.New .form h2 {
+    margin-left: 13.5vw;
 }
 
 .New .form {
     display: flex;
     flex-direction: column;
+}
+
+.New .form .externa{
+    text-align: center;
 }
 
 .New .form input {
@@ -20,6 +30,30 @@
     border-radius: 10px;
     border: none;
 
-    color: #F1FAEE;
+    background-color: #F1FAEE;
     font-size: 16px;
+}
+
+.New .form .line1 input{
+    width: 60vw;
+}
+
+.New .form .line2 input{
+    width: 60vw;
+}
+
+.New .form .line3 input {
+    width: 29.5vw;
+}
+
+.New .form .line3 .tipo {
+    margin-right: 1vw;
+}
+
+.New .form .line4 input {
+    width: 29.5vw;
+}
+
+.New .form .line4 .url {
+    margin-right: 1vw;
 }

@@ -8,12 +8,23 @@ export default function NewImovel() {
       </div>
       <form className="form">
         <h2>*Preenchimento obrigatório</h2>
-        <input className="nome" type="text" required placeholder="Nome" />
-        <input className="nome" type="text" required placeholder="Endereço" />
-        <input className="nome" type="text" required placeholder="Tipo" />
-        <input className="nome" type="text" required placeholder="Preço" />
-        <input className="nome" type="text" placeholder="URL do Anúncio" />
-        <input className="nome" type="text" placeholder="Telefone do Vendedor" />
+          <div className="externa">
+            <div className="line1">
+              <input className="nome" type="text" required placeholder="Nome*" />
+            </div>
+            <div className="line2">
+              <input className="endereco" type="text" required placeholder="Endereço*" />
+            </div>
+            <div className="line3">
+              <input className="tipo" type="text" required placeholder="Tipo*" />
+              <input className="preco" type="text" required placeholder="Preço*" />
+            </div>
+            <div className="line4">
+            <input className="url" type="text" placeholder="URL do Anúncio" />
+            <input className="telefone" type="text" placeholder="Telefone do Vendedor" />
+            </div>
+          </div>
+      
       </form>
     </div>
   );
