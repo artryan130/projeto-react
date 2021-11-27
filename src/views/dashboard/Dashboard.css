@@ -6,7 +6,7 @@
 }
 
 .Dashboard .Sidebar {
-    width: 5vw;
+    width: 80px;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -16,7 +16,9 @@
 
 .Dashboard .PageContent {
     width: 95vw;
-    height: 100vh;
+    height: 95vh;
     margin: 0;
-    padding: 4%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5vh;
 }
