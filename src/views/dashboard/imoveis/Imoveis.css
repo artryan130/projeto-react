@@ -1,33 +1,55 @@
 .Imoveis {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .Imoveis .title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .Imoveis .title h1 {
-    color: #1D3557;
+  color: #1d3557;
 }
 
 .Imoveis .title .pesquisar {
-    width: 275px;
-    height: 50px;
+  width: 275px;
+  height: 50px;
 
-    border-radius: 10px;
-    border: none;
+  border-radius: 10px;
+  border: none;
 
-    background-color: #F1FAEE;
-    font-size: 16px;
+  background-color: #f1faee;
+  font-size: 16px;
 }
 
 .Imoveis .content {
-    display: flex;
-    border-radius: 10px;
-    background-color: #F1FAEE;
-    height: 81vh;
+  display: flex;
+  justify-content: space-between;
+
+  border-radius: 10px;
+  background-color: #f1faee;
+  height: 70vh;
+
+  padding: 2rem;
+}
+
+.Imoveis .content .navlink {
+  height: 5rem;
+  text-decoration: none;
+}
+
+.Imoveis .content .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Imoveis .content .item h3,
+.Imoveis .content .item p {
+  margin: 0px;
+  text-decoration: none;
+  color: #1d3557;
 }

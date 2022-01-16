@@ -1,59 +1,80 @@
 .New {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .New .title h1 {
-    color: #1D3557;
-    font-size: 60px;
-    margin-top: 0px;
+  color: #1d3557;
+  font-size: 60px;
+  margin-top: 0px;
 }
 
 .New .form h2 {
-    margin-left: 13.5vw;
+  margin-left: 13.5vw;
 }
 
 .New .form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.New .form .externa{
-    text-align: center;
+.New .form .externa {
+  text-align: center;
 }
 
 .New .form input {
-    width: 275px;
-    height: 50px;
-    margin-bottom: 10px;
+  width: 275px;
+  height: 50px;
+  margin-bottom: 10px;
 
-    border-radius: 10px;
-    border: none;
+  border-radius: 10px;
+  border: none;
 
-    background-color: #F1FAEE;
-    font-size: 16px;
+  background-color: #f1faee;
+  font-size: 16px;
 }
 
-.New .form .line1 input{
-    width: 60vw;
+.New .form .line1 input {
+  width: 60vw;
 }
 
-.New .form .line2 input{
-    width: 60vw;
+.New .form .line2 input {
+  width: 60vw;
 }
 
 .New .form .line3 input {
-    width: 29.5vw;
+  width: 29.5vw;
 }
 
 .New .form .line3 .tipo {
-    margin-right: 1vw;
+  margin-right: 1vw;
 }
 
 .New .form .line4 input {
-    width: 29.5vw;
+  width: 29.5vw;
 }
 
 .New .form .line4 .url {
-    margin-right: 1vw;
+  margin-right: 1vw;
+}
+
+.New .form .button {
+  width: 350px;
+  height: 70px;
+  margin-top: 40px;
+
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  background: #457b9d;
+
+  color: #f1faee;
+  font-size: 36px;
+  transition: 0.3s;
+}
+
+.New .form .button:hover {
+  background-color: #1d3557;
+  color: white;
 }

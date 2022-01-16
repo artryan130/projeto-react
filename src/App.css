@@ -2,17 +2,17 @@
 
 body,
 .App {
-    width: 100vw;
-    height: 100%;
-    display: flex;
+  width: 100vw;
+  height: 100%;
+  display: flex;
 
-    min-width: 100%;
-    min-height: 100vh;
+  min-width: 100%;
+  min-height: 100vh;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    background-color: #A8DADC;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
+  background-color: #a8dadc;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
 }

@@ -1,4 +1,7 @@
-import "./Imoveis.css";
+import { NavLink } from 'react-router-dom'
+import Photo from '../../../assets/photo.png'
+
+import './Imoveis.css'
 
 export default function Imoveis() {
   return (
@@ -8,8 +11,39 @@ export default function Imoveis() {
         <input placeholder="Pesquisar" className="pesquisar"></input>
       </div>
       <div className="content">
-        <h1>teste</h1>
+        <NavLink to="/dashboard/imovel" className="navlink">
+          <div className="item">
+            <img src={Photo} alt="Foto do apartamento" />
+            <h3>Apartamento</h3>
+            <h3>Flor de Índio</h3>
+            <p>R$1500,00</p>
+          </div>
+        </NavLink>
+        <NavLink to="/dashboard/imovel" className="navlink">
+          <div className="item">
+            <img src={Photo} alt="Foto do apartamento" />
+            <h3>Apartamento</h3>
+            <h3>Flor de Índio</h3>
+            <p>R$1500,00</p>
+          </div>
+        </NavLink>
+        <NavLink to="/dashboard/imovel" className="navlink">
+          <div className="item">
+            <img src={Photo} alt="Foto do apartamento" />
+            <h3>Apartamento</h3>
+            <h3>Flor de Índio</h3>
+            <p>R$1500,00</p>
+          </div>
+        </NavLink>
+        <NavLink to="/dashboard/imovel" className="navlink">
+          <div className="item">
+            <img src={Photo} alt="Foto do apartamento" />
+            <h3>Apartamento</h3>
+            <h3>Flor de Índio</h3>
+            <p>R$1500,00</p>
+          </div>
+        </NavLink>
       </div>
     </div>
-  );
+  )
 }

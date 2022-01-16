@@ -1,14 +1,14 @@
-import { Router, Switch, Route } from "react-router-dom";
-import history from "../../services/history";
+import { Router, Switch, Route } from 'react-router-dom'
+import history from '../../services/history'
 
-import Sidebar from "./sidebar/Sidebar";
-import Imoveis from "./imoveis/Imoveis";
-import Imovel from "./imovel/Imovel";
-import EditImovel from "./editImovel/EditImovel";
-import NewImovel from "./newImovel/NewImovel";
-import UserList from "./userList/UserList";
+import Sidebar from './sidebar/Sidebar'
+import Imoveis from './imoveis/Imoveis'
+import Imovel from './imovel/Imovel'
+import EditImovel from './editImovel/EditImovel'
+import NewImovel from './newImovel/NewImovel'
+import UserList from './userList/UserList'
 
-import "./Dashboard.css";
+import './Dashboard.css'
 
 function Dashboard() {
   return (
@@ -28,7 +28,7 @@ function Dashboard() {
         </div>
       </Router>
     </div>
-  );
+  )
 }
 
-export default Dashboard;
+export default Dashboard

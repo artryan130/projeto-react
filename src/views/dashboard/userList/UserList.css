@@ -1,32 +1,56 @@
 .User {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .User .title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .User .title h1 {
-    color: #1D3557;
+  color: #1d3557;
 }
 
 .User .title .pesquisar {
-    width: 275px;
-    height: 50px;
+  width: 275px;
+  height: 50px;
 
-    border-radius: 10px;
-    border: none;
+  border-radius: 10px;
+  border: none;
 
-    background-color: #F1FAEE;
-    font-size: 16px;
+  background-color: #f1faee;
+  font-size: 16px;
 }
 
 .User .content {
-    display: flex;
-    border-radius: 10px;
-    background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #f1faee;
+
+  padding: 2rem;
+}
+
+#divider {
+  margin: 0;
+  width: 100%;
+  border: 0.01 solid #1d3557;
+}
+
+.User .content .titles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2.5rem;
+}
+
+.User .content .line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }

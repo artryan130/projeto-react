@@ -1,33 +1,34 @@
-import axios from "axios";
-import { useState } from "react";
-import { useHistory } from "react-router";
+import axios from 'axios'
+import { useState } from 'react'
+import { useHistory } from 'react-router'
+import { NavLink } from 'react-router-dom'
 
-import "./Login.css";
+import './Login.css'
 
 export default function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
 
-  const history = useHistory();
+  const history = useHistory()
 
   function handleEmailChange(event) {
-    setEmail(event.target.value);
+    setEmail(event.target.value)
   }
 
   function handlePasswordChange(event) {
-    setPassword(event.target.value);
+    setPassword(event.target.value)
   }
 
   function handleSubmit(event) {
-    console.log("Enviando form");
-    event.preventDefault();
+    console.log('Enviando form')
+    event.preventDefault()
     axios
       .post(
-        "https://webapp290016.ip-198-58-124-158.cloudezapp.io/users/login",
+        'https://webapp290016.ip-198-58-124-158.cloudezapp.io/users/login',
         { email: email, password: password }
       )
-      .then((res) => history.push("/dashboard"))
-      .catch((err) => console.log(err));
+      .then(res => history.push('/dashboard'))
+      .catch(err => console.log(err))
   }
 
   return (
@@ -56,9 +57,11 @@ export default function Login() {
         </div>
 
         <div>
-          <button type="submit" className="button">
-            Entrar
-          </button>
+          <NavLink to="/dashboard">
+            <button type="submit" className="button">
+              Entrar
+            </button>
+          </NavLink>
         </div>
 
         <div className="register">
@@ -68,5 +71,5 @@ export default function Login() {
         </div>
       </form>
     </div>
-  );
+  )
 }

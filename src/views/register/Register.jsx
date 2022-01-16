@@ -1,62 +1,56 @@
-import axios from "axios";
-import { useState } from "react";
-import { useHistory } from "react-router";
+import { NavLink } from 'react-router-dom'
+import axios from 'axios'
+import { useState } from 'react'
+import { useHistory } from 'react-router'
 
-import "./Register.css";
+import Arrow from '../../assets/arrow.png'
+
+import './Register.css'
 
 export default function Register() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [passwordConfirmation, setPasswordConfirmation] = useState("");
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [passwordConfirmation, setPasswordConfirmation] = useState('')
 
-  const history = useHistory();
+  const history = useHistory()
 
   function handleNameChange(event) {
-    setName(event.target.value);
+    setName(event.target.value)
   }
 
   function handleEmailChange(event) {
-    setEmail(event.target.value);
+    setEmail(event.target.value)
   }
 
   function handlePasswordChange(event) {
-    setPassword(event.target.value);
+    setPassword(event.target.value)
   }
 
   function handlePasswordConfirmationChange(event) {
-    setPasswordConfirmation(event.target.value);
+    setPasswordConfirmation(event.target.value)
   }
 
   function handleSubmit(event) {
-    console.log("Enviar formulario");
-    event.preventDefault();
+    console.log('Enviar formulario')
+    event.preventDefault()
     axios
-      .post("https://webapp290016.ip-198-58-124-158.cloudezapp.io/users", {
+      .post('https://webapp290016.ip-198-58-124-158.cloudezapp.io/users', {
         name: name,
         email: email,
         password: password,
-        passwordConfirmation: passwordConfirmation,
+        passwordConfirmation: passwordConfirmation
       })
-      .then((res) => history.push("/"))
-      .catch((err) => console.log(err));
+      .then(res => history.push('/'))
+      .catch(err => console.log(err))
   }
 
   return (
     <div className="Register">
       <div className="arrow">
-        <a href="/">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="64px"
-            viewBox="0 0 24 24"
-            width="64px"
-            fill="#1D3557"
-          >
-            <path d="M0 0h24v24H0V0z" fill="none" />
-            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
-          </svg>
-        </a>
+        <NavLink to="/">
+          <img src={Arrow} alt="Voltar" />
+        </NavLink>
       </div>
       <form method="POST" onSubmit={handleSubmit} className="form">
         <div className="title">
@@ -92,11 +86,12 @@ export default function Register() {
             onChange={handlePasswordConfirmationChange}
           />
         </div>
-
-        <button type="submit" className="button">
-          Confirmar
-        </button>
+        <NavLink to="/">
+          <button type="submit" className="button">
+            Confirmar
+          </button>
+        </NavLink>
       </form>
     </div>
-  );
+  )
 }

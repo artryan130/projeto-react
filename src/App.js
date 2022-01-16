@@ -1,11 +1,11 @@
-import { Router, Switch, Route } from "react-router-dom";
-import history from "./services/history";
+import { Router, Switch, Route } from 'react-router-dom'
+import history from './services/history'
 
-import Login from "./views/login/Login";
-import Register from "./views/register/Register";
-import Dashboard from "./views/dashboard/Dashboard";
+import Login from './views/login/Login'
+import Register from './views/register/Register'
+import Dashboard from './views/dashboard/Dashboard'
 
-import "./App.css";
+import './App.css'
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         </Switch>
       </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

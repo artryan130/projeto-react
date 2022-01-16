@@ -1,59 +1,92 @@
 .Edit {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .Edit .title h1 {
-    color: #1D3557;
-    font-size: 60px;
-    margin-top: 0px;
+  color: #1d3557;
+  font-size: 60px;
+  margin-top: 0px;
 }
 
 .Edit .form h2 {
-    margin-left: 13.5vw;
+  margin-left: 13.5vw;
 }
 
 .Edit .form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.Edit .form .externa{
-    text-align: center;
+.Edit .form .externa {
+  text-align: center;
 }
 
 .Edit .form input {
-    width: 275px;
-    height: 50px;
-    margin-bottom: 10px;
+  width: 275px;
+  height: 50px;
+  margin-bottom: 10px;
 
-    border-radius: 10px;
-    border: none;
+  border-radius: 10px;
+  border: none;
 
-    background-color: #F1FAEE;
-    font-size: 16px;
+  background-color: #f1faee;
+  font-size: 16px;
 }
 
-.Edit .form .line1 input{
-    width: 60vw;
+.Edit .form .line1 input {
+  width: 60vw;
 }
 
-.Edit .form .line2 input{
-    width: 60vw;
+.Edit .form .line2 input {
+  width: 60vw;
 }
 
 .Edit .form .line3 input {
-    width: 29.5vw;
+  width: 29.5vw;
 }
 
 .Edit .form .line3 .tipo {
-    margin-right: 1vw;
+  margin-right: 1vw;
 }
 
 .Edit .form .line4 input {
-    width: 29.5vw;
+  width: 29.5vw;
 }
 
 .Edit .form .line4 .url {
-    margin-right: 1vw;
+  margin-right: 1vw;
+}
+
+.Edit button {
+  width: 20rem;
+  height: 4rem;
+  margin-top: 40px;
+
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  color: #f1faee;
+  font-size: 36px;
+  transition: 0.3s;
+}
+
+.Edit .button-blue {
+  background: #457b9d;
+  margin-right: 3rem;
+}
+
+.Edit .button-blue:hover {
+  background-color: #1d3557;
+  color: white;
+}
+
+.Edit .button-red {
+  background: #e63946;
+}
+
+.Edit .button-red:hover {
+  background-color: #8b0000;
+  color: white;
 }

@@ -1,9 +1,36 @@
 .Navbar {
-    display: flex;
-    flex-direction: column;
+  height: 100vh;
+  max-height: 100vh;
 
-    margin: 0;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    background: #F1FAEE;
+  margin: 0;
+  padding: 0 0.5rem 0 0.5rem;
+
+  background: #f1faee;
+}
+
+.Navbar .menu {
+  height: 90%;
+
+  margin: 0px;
+  padding: 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Navbar .menu img {
+  margin-bottom: 1.5rem;
+}
+
+.Navbar .logout {
+  height: 10%;
+
+  margin: 0px;
+  padding: 0px;
 }
